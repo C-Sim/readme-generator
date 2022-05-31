@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/C-Sim/readme-generator/issues"
   },
-  "homepage": "https://github.com/C-Sim/readme-generator#readme"
+  "homepage": "https://github.com/C-Sim/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
