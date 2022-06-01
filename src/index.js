@@ -1,6 +1,6 @@
 const fs = require("fs");
-
 const inquirer = require("inquirer");
+const figlet = require("figlet");
 
 const questions = [
   {
@@ -45,14 +45,32 @@ const questions = [
     ],
   },
   {
+    name: "contributionConfirmation",
+    type: "confirm",
+    message:
+      "Would you like to add information on how to contribute to the project?",
+  },
+  {
     name: "contributions",
     type: "input",
     message: "What process should be followed to contribute to the project?",
+    when: (answer) => {
+      return answer.contributionConfirmation;
+    },
+  },
+  {
+    name: "testConfirmation",
+    type: "confirm",
+    message:
+      "Would you like to add information on tests that can be run on the app?",
   },
   {
     name: "tests",
     type: "input",
     message: "What tests can be run on the app?",
+    when: (answer) => {
+      return answer.testConfirmation;
+    },
   },
   {
     name: "gitHubUsername",
@@ -113,17 +131,27 @@ ${answers.tests}
 
 ## Questions
 
-Please contact me via email at ${answers.emailAddress}
-Or via my GitHub repo at https://github.com/${answers.gitHubUsername}`;
+Please contact me via email at ${
+    answers.emailAddress
+  } or via my GitHub repo at https://github.com/${answers.gitHubUsername}`;
 };
 
 const init = async () => {
-  const answers = await inquirer.prompt(questions);
+  //   const answers = await inquirer.prompt(questions);
 
-  const readMe = generateReadMe(answers);
+  //   const readMe = generateReadMe(answers);
 
-  fs.writeFileSync("GENERATED_README.md", readMe);
-  console.log("written successfully");
+  //   fs.writeFileSync("GENERATED_README.md", readMe);
+
+  console.log(
+    figlet.textSync("README generated", {
+      font: "Standard",
+      horizontalLayout: "default",
+      verticalLayout: "default",
+      width: 48,
+      whitespaceBreak: true,
+    })
+  );
 };
 
 init();

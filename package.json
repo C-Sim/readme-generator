@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/C-Sim/readme-generator#readme",
   "dependencies": {
+    "figlet": "^1.5.2",
     "inquirer": "^8.2.4"
   }
 }
