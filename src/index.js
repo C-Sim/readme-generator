@@ -66,19 +66,64 @@ const questions = [
   },
 ];
 
-const init = async () => {
-  const readMeInfo = [];
+const generateReadMe = (answers) => {
+  return `# Project Title ![badge](${encodeURI(
+    `https://img.shields.io/badge/${answers.license}-License-green`
+  )})
 
+## Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributions](#contributions)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Description
+
+${answers.description}
+
+## Installation
+
+\`\`\`
+${answers.installation}
+\`\`\`
+
+## Usage
+
+\`\`\`
+${answers.usage}
+\`\`\`
+
+## License
+
+${answers.license} License
+
+## Contributions
+
+${answers.contributions}
+
+## Tests
+
+\`\`\`
+${answers.tests}
+\`\`\`
+
+## Questions
+
+Please contact me via email at ${answers.emailAddress}
+Or via my GitHub repo at https://github.com/${answers.gitHubUsername}`;
+};
+
+const init = async () => {
   const answers = await inquirer.prompt(questions);
 
-  readMeInfo.push(answers);
-  console.log(readMeInfo);
+  const readMe = generateReadMe(answers);
 
-  const readMe = () => {
-    ``;
-  };
-
-  fs.writeFileSync("GENERATED_README.md", md);
+  fs.writeFileSync("GENERATED_README.md", readMe);
+  console.log("written successfully");
 };
 
 init();

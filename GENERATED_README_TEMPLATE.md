@@ -1,4 +1,4 @@
-# Project Title ![badge](https://img.shields.io/badge/GNU%20General%20Public%20License%20v3.0-License-green)
+# Project Title ![badge](https://img.shields.io/badge/Apache-License-green)
 
 ## Contents
 
@@ -12,35 +12,37 @@
 
 ## Description
 
-vrwv
+Lorem ipsum
 
 ## Installation
 
 ```
-vrgwdvrgwgv
+npm install
 ```
 
 ## Usage
 
 ```
-vrgrdwvwgsrv
+npm run start
 ```
 
 ## License
 
-GNU General Public License v3.0 License
+xxx License
 
 ## Contributions
 
-vbfb
+Lorem ipsum
 
 ## Tests
 
+Enter the text below in your terminal:
+
 ```
-bfbfwb
+npm run test
 ```
 
 ## Questions
 
-Please contact me via email at bfbgfbesb
-Or via my GitHub repo at https://github.com/vqagveg
+Please contact me via email at ...@....com
+Or via my GitHub repo at https://github.com/...
