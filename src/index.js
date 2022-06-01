@@ -66,6 +66,19 @@ const questions = [
   },
 ];
 
-const generateReadMe = () => {};
+const init = async () => {
+  const readMeInfo = [];
 
-const readMe = () => {};
+  const answers = await inquirer.prompt(questions);
+
+  readMeInfo.push(answers);
+  console.log(readMeInfo);
+
+  const readMe = () => {
+    ``;
+  };
+
+  fs.writeFileSync("GENERATED_README.md", md);
+};
+
+init();
