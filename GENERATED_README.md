@@ -1,4 +1,4 @@
-# Project Title ![badge](https://img.shields.io/badge/GNU%20General%20Public%20License%20v3.0-License-green)
+# vhnidovd ![badge](https://img.shields.io/badge/BSD%202-Clause%20'Simplified'%20License-License-green)
 
 ## Contents
 
@@ -7,40 +7,35 @@
 - [Usage](#usage)
 - [License](#license)
 - [Contributions](#contributions)
-- [Tests](#tests)
+
 - [Questions](#questions)
 
 ## Description
 
-vrwv
+brfobr
 
 ## Installation
 
 ```
-vrgwdvrgwgv
+vjpvg
 ```
 
 ## Usage
 
 ```
-vrgrdwvwgsrv
+pwigwe
 ```
 
 ## License
 
-GNU General Public License v3.0 License
+BSD 2-Clause 'Simplified' License License
 
 ## Contributions
 
-vbfb
+nodefhi
 
-## Tests
 
-```
-bfbfwb
-```
 
 ## Questions
 
-Please contact me via email at bfbgfbesb
-Or via my GitHub repo at https://github.com/vqagveg
+Please contact me via email at nhgws or via my GitHub repo at https://github.com/kgnvwr

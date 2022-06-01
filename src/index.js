@@ -85,7 +85,7 @@ const questions = [
 ];
 
 const generateReadMe = (answers) => {
-  return `# Project Title ![badge](${encodeURI(
+  return `# ${answers.projectTitle} ![badge](${encodeURI(
     `https://img.shields.io/badge/${answers.license}-License-green`
   )})
 
@@ -95,8 +95,8 @@ const generateReadMe = (answers) => {
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributions](#contributions)
-- [Tests](#tests)
+${answers.contributionConfirmation ? `- [Contributions](#contributions)` : ""}
+${answers.testConfirmation ? `- [Tests](#tests)` : ""}
 - [Questions](#questions)
 
 ## Description
@@ -117,17 +117,25 @@ ${answers.usage}
 
 ## License
 
-${answers.license} License
+${answers.license}
 
-## Contributions
+${
+  answers.contributionConfirmation
+    ? `## Contributions
 
-${answers.contributions}
+${answers.contributions}`
+    : ""
+}
 
-## Tests
+${
+  answers.testConfirmation
+    ? `## Tests
 
 \`\`\`
 ${answers.tests}
-\`\`\`
+\`\`\` `
+    : ""
+}
 
 ## Questions
 
@@ -137,14 +145,14 @@ Please contact me via email at ${
 };
 
 const init = async () => {
-  //   const answers = await inquirer.prompt(questions);
+  const answers = await inquirer.prompt(questions);
 
-  //   const readMe = generateReadMe(answers);
+  const readMe = generateReadMe(answers);
 
-  //   fs.writeFileSync("GENERATED_README.md", readMe);
+  fs.writeFileSync("GENERATED_README.md", readMe);
 
   console.log(
-    figlet.textSync("README generated", {
+    figlet.textSync("README generated :)", {
       font: "Standard",
       horizontalLayout: "default",
       verticalLayout: "default",
