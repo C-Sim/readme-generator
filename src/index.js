@@ -149,8 +149,6 @@ const init = async () => {
 
   const readMe = generateReadMe(answers);
 
-  console.log(encodeURI(answers.license));
-
   fs.writeFileSync("GENERATED_README.md", readMe);
 
   console.log(
