@@ -29,18 +29,18 @@ const questions = [
     type: "list",
     message: "What license has been applied to the project?",
     choices: [
-      "Apache License 2.0",
-      "GNU General Public License v3.0",
-      "MIT License",
-      "BSD 2-Clause 'Simplified' License",
-      "BSD 3-Clause 'New' or 'Revised' License",
-      "Boost Software License 1.0",
+      "Apache 2.0",
+      "GNU General Public v3.0",
+      "MIT",
+      "BSD 2 Clause",
+      "BSD 3 Clause",
+      "Boost Software 1.0",
       "Creative Commons Zero v1.0 Universal",
-      "Eclipse Public License 2.0",
-      "GNU Affero General Public License v3.0",
-      "GNU General Public License v2.0",
-      "GNU Lesser General Public License v2.1",
-      "Mozilla Public License 2.0",
+      "Eclipse Public 2.0",
+      "GNU Affero General Public v3.0",
+      "GNU General Public v2.0",
+      "GNU Lesser General Public v2.1",
+      "Mozilla Public 2.0",
       "The Unlicense",
     ],
   },
@@ -86,7 +86,7 @@ const questions = [
 
 const generateReadMe = (answers) => {
   return `# ${answers.projectTitle} ![badge](${encodeURI(
-    `https://img.shields.io/badge/${answers.license}-License-green`
+    `https://img.shields.io/badge/${answers.license}-license-green`
   )})
 
 ## Contents
@@ -149,14 +149,16 @@ const init = async () => {
 
   const readMe = generateReadMe(answers);
 
+  console.log(encodeURI(answers.license));
+
   fs.writeFileSync("GENERATED_README.md", readMe);
 
   console.log(
-    figlet.textSync("README generated :)", {
+    figlet.textSync("README generated!", {
       font: "Standard",
       horizontalLayout: "default",
       verticalLayout: "default",
-      width: 48,
+      width: 64,
       whitespaceBreak: true,
     })
   );
