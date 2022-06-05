@@ -1,5 +1,7 @@
 # readme-generator ![badge](https://img.shields.io/badge/MIT-license-green)
 
+[Demo](https://drive.google.com/file/d/1wCfdWHnkdtJ8Yb8K1r3Zj_ot0dvN9S-P/view)
+
 ## Contents
 
 - [Description](#description)
@@ -43,14 +45,14 @@ Please contact me via email at Cherelle.S@hotmail.com or via my GitHub repo at h
 <details>
 <summary>Terminal User Journey</summary>
 
-![terminal](./assets/images/portfolio-desktop.png)
+![terminal](./screenshots/rmg-terminal.png)
 
 </details>
 
 <details>
 <summary>Generated README</summary>
 
-![generated-readme](./assets/images/portfolio-mobile.png)
+![generated-readme](./screenshots/rmg-sample.png)
 
 </details>
 <br>

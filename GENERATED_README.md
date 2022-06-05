@@ -1,4 +1,4 @@
-# nfipeq 'f ![badge](https://img.shields.io/badge/Apache%202.0-license-green)
+# Demo ![badge](https://img.shields.io/badge/MIT-license-green)
 
 ## Contents
 
@@ -6,34 +6,36 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-
+- [Contributions](#contributions)
 
 - [Questions](#questions)
 
 ## Description
 
-fejo
+To demonstrate
 
 ## Installation
 
 ```
-fewfg
+npm install
 ```
 
 ## Usage
 
 ```
-gvr
+npm start
 ```
 
 ## License
 
-Apache 2.0
+MIT
 
+## Contributions
 
+Create a pull request and dev branch and email me using the details below to request a merge
 
 
 
 ## Questions
 
-Please contact me via email at n or via my GitHub repo at https://github.com/n
+Please contact me via email at Cherelle.s@hotmail.com or via my GitHub repo at https://github.com/C-Sim
