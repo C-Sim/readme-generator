@@ -1,4 +1,4 @@
-# Demo ![badge](https://img.shields.io/badge/MIT-license-green)
+# team-profile-generator ![badge](https://img.shields.io/badge/MIT-license-green)
 
 ## Contents
 
@@ -6,13 +6,13 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributions](#contributions)
 
+- [Tests](#tests)
 - [Questions](#questions)
 
 ## Description
 
-To demonstrate
+Command line app that generates a webpage displaying a profile for each team member
 
 ## Installation
 
@@ -30,12 +30,14 @@ npm start
 
 MIT
 
-## Contributions
-
-Create a pull request and dev branch and email me using the details below to request a merge
 
 
+## Tests
+
+```
+npm test
+``` 
 
 ## Questions
 
-Please contact me via email at Cherelle.s@hotmail.com or via my GitHub repo at https://github.com/C-Sim
+Please contact me via email at Cherelle.S@hotmail.com or via my GitHub repo at https://github.com/C-Sim

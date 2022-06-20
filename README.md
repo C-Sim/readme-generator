@@ -40,6 +40,13 @@ Create a dev branch and pull request on GitHub - contact me using the details be
 
 Please contact me via email at Cherelle.S@hotmail.com or via my GitHub repo at https://github.com/C-Sim
 
+## Technologies
+
+- Inquirer
+- Node
+- fs
+- Figlet
+
 ## Screenshots
 
 <details>
